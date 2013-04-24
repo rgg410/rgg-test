@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>es.tid.greta.dbe</groupId>
+    <artifactId>dbe-settlement</artifactId>
+    <version>2.3.1-SNAPSHOT</version>
+  </parent>
+  <groupId>es.tid.greta.dbe.settlement</groupId>
+  <artifactId>st-server</artifactId>
+  <packaging>war</packaging>
+  <name>st-server</name>
+  
+  <properties>
+    <pathToFilters>../..</pathToFilters>
+</properties>
+   <dependencies>
+        <!-- Internal dependencies -->
+        <dependency>
+            <groupId>es.tid.greta.dbe.settlement</groupId>
+            <artifactId>st-dao</artifactId>
+            <version>${settlement.version}</version>
+        </dependency>
+       <!--  <dependency>
+            <groupId>es.tid.greta.dbe.settlement</groupId>
+            <artifactId>st-model</artifactId>
+            <version>${settlement.version}</version>
+        </dependency> -->
+        
+        <!-- 3rd party dependencies -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-engine</artifactId>
+            <version>${pentaho-kettle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-core</artifactId>
+            <version>${pentaho-kettle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-vfs</groupId>
+            <artifactId>commons-vfs</artifactId>
+            <version>${commons-vfs.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>${servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons-fileupload.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+        <!--         <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-web</artifactId> -->
+<!--             <version>${org.springframework.version}</version> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-webmvc</artifactId> -->
+<!--             <version>${org.springframework.version}</version> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-core</artifactId> -->
+<!--             <version>${org.springframework.version}</version> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-orm</artifactId> -->
+<!--             <version>${org.springframework.version}</version> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>org.springframework</groupId> -->
+<!--             <artifactId>spring-tx</artifactId> -->
+<!--             <version>${org.springframework.version}</version> -->
+<!--         </dependency> -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        
+        <!-- TEST SCOPE -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- RUNTIME SCOPE -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>${com.oracle.artifact}</artifactId>
+            <version>${com.oracle.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ucp</artifactId>
+            <version>${com.oracle.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-core</artifactId>
+            <version>${ehcacheVersion}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${javassist.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-nodep</artifactId>
+            <version>${cglib-nodep.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-db</artifactId>
+            <version>${pentaho-kettle.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-library</groupId>
+            <artifactId>libformula</artifactId>
+            <version>${pentaho-library.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-library</groupId>
+            <artifactId>libbase</artifactId>
+            <version>${pentaho-library.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>simple-jndi</groupId>
+            <artifactId>simple-jndi</artifactId>
+            <version>${simple-jndi.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+  </dependencies>
+  <build>
+    <finalName>st-server</finalName>
+  </build>
+</project>
