@@ -22,7 +22,6 @@
             <artifactId>st-dao</artifactId>
             <version>${settlement.version}</version>
         </dependency>
-       
         
         <!-- 3rd party dependencies -->
         <dependency>
