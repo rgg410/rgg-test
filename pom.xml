@@ -22,11 +22,7 @@
             <artifactId>st-dao</artifactId>
             <version>${settlement.version}</version>
         </dependency>
-       <!--  <dependency>
-            <groupId>es.tid.greta.dbe.settlement</groupId>
-            <artifactId>st-model</artifactId>
-            <version>${settlement.version}</version>
-        </dependency> -->
+       
         
         <!-- 3rd party dependencies -->
         <dependency>
