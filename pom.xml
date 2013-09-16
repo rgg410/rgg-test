@@ -14,6 +14,6 @@
    
   </dependencies>
   <build>
-    <finalName>test-project-revert</finalName>
+    <finalName>test-project-revert-commit2</finalName>
   </build>
 </project>
