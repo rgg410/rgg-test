@@ -13,6 +13,6 @@
    
   </dependencies>
   <build>
-    <finalName>test-project</finalName>
+    <finalName>test-project-reset</finalName>
   </build>
 </project>
