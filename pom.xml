@@ -10,9 +10,9 @@
   <name>st-server</name>
   
   
-  
+   
   </dependencies>
   <build>
-    <finalName>test-project-reset</finalName>
+    <finalName>test-project-reset2</finalName>
   </build>
 </project>
