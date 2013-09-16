@@ -10,9 +10,10 @@
   <name>st-server</name>
   
   
+  
    
   </dependencies>
   <build>
-    <finalName>test-project</finalName>
+    <finalName>test-project-revert</finalName>
   </build>
 </project>
